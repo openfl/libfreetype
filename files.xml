@@ -1,6 +1,7 @@
 <xml>
-
+	
 	<files id="native-toolkit-freetype-depends" >
+		
 		<depend name="${NATIVE_TOOLKIT_PATH}/freetype/include/config/ftconfig.h"/>
 		<depend name="${NATIVE_TOOLKIT_PATH}/freetype/include/config/ftheader.h"/>
 		<depend name="${NATIVE_TOOLKIT_PATH}/freetype/include/config/ftmodule.h"/>
@@ -20,6 +21,7 @@
 		<depend name="${NATIVE_TOOLKIT_PATH}/freetype/include/ftcid.h"/>
 		<depend name="${NATIVE_TOOLKIT_PATH}/freetype/include/fterrdef.h"/>
 		<depend name="${NATIVE_TOOLKIT_PATH}/freetype/include/fterrors.h"/>
+		<depend name="${NATIVE_TOOLKIT_PATH}/freetype/include/ftfntfmt.h"/>
 		<depend name="${NATIVE_TOOLKIT_PATH}/freetype/include/ftgasp.h"/>
 		<depend name="${NATIVE_TOOLKIT_PATH}/freetype/include/ftglyph.h"/>
 		<depend name="${NATIVE_TOOLKIT_PATH}/freetype/include/ftgxval.h"/>
@@ -46,19 +48,18 @@
 		<depend name="${NATIVE_TOOLKIT_PATH}/freetype/include/ftttdrv.h"/>
 		<depend name="${NATIVE_TOOLKIT_PATH}/freetype/include/fttypes.h"/>
 		<depend name="${NATIVE_TOOLKIT_PATH}/freetype/include/ftwinfnt.h"/>
-		<depend name="${NATIVE_TOOLKIT_PATH}/freetype/include/ftxf86.h"/>
+		
 	</files>
-
-
+	
 	<files id="native-toolkit-freetype" tags="" >
-
+		
 		<cache value="1" />
 		<tag value="${NATIVE_TOOLKIT_OPTIM_TAG}" if="NATIVE_TOOLKIT_OPTIM_TAG" />
 		<depend files="native-toolkit-freetype-depends" />
-
+		
 		<compilerflag value="-I${NATIVE_TOOLKIT_PATH}/freetype/include" />
 		<compilerflag value="-DFT2_BUILD_LIBRARY" />
-
+		
 		<file name="${NATIVE_TOOLKIT_PATH}/freetype/src/autofit/autofit.c" />
 		<file name="${NATIVE_TOOLKIT_PATH}/freetype/src/base/ftadvanc.c" />
 		<file name="${NATIVE_TOOLKIT_PATH}/freetype/src/base/ftbbox.c" />
@@ -67,11 +68,13 @@
 		<file name="${NATIVE_TOOLKIT_PATH}/freetype/src/base/ftcid.c" />
 		<file name="${NATIVE_TOOLKIT_PATH}/freetype/src/base/ftdbgmem.c" />
 		<file name="${NATIVE_TOOLKIT_PATH}/freetype/src/base/ftdebug.c" />
+		<file name="${NATIVE_TOOLKIT_PATH}/freetype/src/base/ftfntfmt.c" />
 		<file name="${NATIVE_TOOLKIT_PATH}/freetype/src/base/ftfstype.c" />
 		<file name="${NATIVE_TOOLKIT_PATH}/freetype/src/base/ftgasp.c" />
 		<file name="${NATIVE_TOOLKIT_PATH}/freetype/src/base/ftgloadr.c" />
 		<file name="${NATIVE_TOOLKIT_PATH}/freetype/src/base/ftglyph.c" />
 		<file name="${NATIVE_TOOLKIT_PATH}/freetype/src/base/ftgxval.c" />
+		<file name="${NATIVE_TOOLKIT_PATH}/freetype/src/base/fthash.c" />
 		<file name="${NATIVE_TOOLKIT_PATH}/freetype/src/base/ftinit.c" />
 		<file name="${NATIVE_TOOLKIT_PATH}/freetype/src/base/ftlcdfil.c" />
 		<file name="${NATIVE_TOOLKIT_PATH}/freetype/src/base/ftmm.c" />
@@ -90,7 +93,6 @@
 		<file name="${NATIVE_TOOLKIT_PATH}/freetype/src/base/fttype1.c" />
 		<file name="${NATIVE_TOOLKIT_PATH}/freetype/src/base/ftutil.c" />
 		<file name="${NATIVE_TOOLKIT_PATH}/freetype/src/base/ftwinfnt.c" />
-		<file name="${NATIVE_TOOLKIT_PATH}/freetype/src/base/ftxf86.c" />
 		<file name="${NATIVE_TOOLKIT_PATH}/freetype/src/bdf/bdf.c" />
 		<file name="${NATIVE_TOOLKIT_PATH}/freetype/src/bzip2/ftbzip2.c" />
 		<file name="${NATIVE_TOOLKIT_PATH}/freetype/src/cache/ftcache.c" />
@@ -110,7 +112,7 @@
 		<file name="${NATIVE_TOOLKIT_PATH}/freetype/src/type1/type1.c" />
 		<file name="${NATIVE_TOOLKIT_PATH}/freetype/src/type42/type42.c" />
 		<file name="${NATIVE_TOOLKIT_PATH}/freetype/src/winfonts/winfnt.c" />
-
+		
 	</files>
-
+	
 </xml>
