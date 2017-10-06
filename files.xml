@@ -60,6 +60,12 @@
 		<compilerflag value="-I${NATIVE_TOOLKIT_PATH}/freetype/include" />
 		<compilerflag value="-DFT2_BUILD_LIBRARY" />
 		
+		<compilerflag value="-DNATIVE_TOOLKIT_HAVE_HARFBUZZ" if="NATIVE_TOOLKIT_HAVE_HARFBUZZ" />
+		<compilerflag value="-I${NATIVE_TOOLKIT_PATH}/harfbuzz/src" if="NATIVE_TOOLKIT_HAVE_HARFBUZZ" />
+		
+		<compilerflag value="-DNATIVE_TOOLKIT_HAVE_PNG" if="NATIVE_TOOLKIT_HAVE_PNG" />
+		<compilerflag value="-I${NATIVE_TOOLKIT_PATH}/png" if="NATIVE_TOOLKIT_HAVE_PNG" />
+		
 		<file name="${NATIVE_TOOLKIT_PATH}/freetype/src/autofit/autofit.c" />
 		<file name="${NATIVE_TOOLKIT_PATH}/freetype/src/base/ftadvanc.c" />
 		<file name="${NATIVE_TOOLKIT_PATH}/freetype/src/base/ftbbox.c" />
