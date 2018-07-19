@@ -5,7 +5,7 @@
 /*    Miscellaneous macros for stand-alone rasterizer (specification       */
 /*    only).                                                               */
 /*                                                                         */
-/*  Copyright 2005-2016 by                                                 */
+/*  Copyright 2005-2018 by                                                 */
 /*  David Turner, Robert Wilhelm, and Werner Lemberg.                      */
 /*                                                                         */
 /*  This file is part of the FreeType project, and may only be used        */
@@ -37,7 +37,7 @@
 #define FT_LOCAL_DEF( x )   static x
 
 
-  /* from include/fttypes.h */
+  /* from include/freetype/fttypes.h */
 
   typedef unsigned char  FT_Byte;
   typedef signed int     FT_Int;
@@ -54,7 +54,7 @@
               (FT_ULong)_x4         )
 
 
-  /* from include/ftsystem.h */
+  /* from include/freetype/ftsystem.h */
 
   typedef struct FT_MemoryRec_*  FT_Memory;
 
