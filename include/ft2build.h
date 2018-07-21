@@ -34,6 +34,14 @@
 #ifndef FT2BUILD_H_
 #define FT2BUILD_H_
 
+
+#if defined (HX_WINRT) && defined (__cplusplus_winrt)
+#define NOMINMAX
+#include <dwrite.h>
+#define generic userGeneric
+#endif
+
+
 #include <config/ftheader.h>
 
 #endif /* FT2BUILD_H_ */
