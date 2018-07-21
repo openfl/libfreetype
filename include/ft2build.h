@@ -35,10 +35,9 @@
 #define FT2BUILD_H_
 
 
-#if defined (HX_WINRT) && defined (__cplusplus_winrt)
+#ifdef HX_WINRT
 #define NOMINMAX
-#include <dwrite.h>
-#define generic userGeneric
+#define generic GenericFromFreeTypeLibrary
 #endif
 
 
